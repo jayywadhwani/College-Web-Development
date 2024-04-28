@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 95vh;
+        background-color: #7689de;
+    }
+    .content-div{
+        width: 40vw;
+        height: 30vh;
+        font-size: 2rem;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.5rem;
+        background-color: #fff;
+        padding: 25px;
+    }
+    button{
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 0.7rem;
+        border: 1px solid black;
+        border-radius: 25px;
+        background-color: #75e0f1;
+    }
+</style>
+<body>
+        <div class="content-div"></div>
+        <button>Click me to generate Quotes</button>
+        <script>
+            const btn = document.querySelector("button");
+            const div = document.querySelector("div");
+            let counter = 0;
+            btn.addEventListener("click", (e) => {
+                e.preventDefault()
+                const arr = [
+                    "Believe you can and you're halfway there. \n- Theodore Roosevelt",
+                    "The only way to do great work is to love what you do. \n- Steve Jobs",
+                    "Success is not final, failure is not fatal: It is the courage to continue that counts. \n- Winston Churchill",
+                    "The future belongs to those who believe in the beauty of their dreams. \n- Eleanor Roosevelt",
+                    "In the middle of every difficulty lies opportunity. \n- Albert Einstein",
+                    "The only limit to our realization of tomorrow will be our doubts of today. \n- Franklin D. Roosevelt",
+                    "You are never too old to set another goal or to dream a new dream. \n- C.S. Lewis",
+                    "Don't watch the clock; do what it does. Keep going. \n- Sam Levenson",
+                    "The only person you should try to be better than is the person you were yesterday. \n- Anonymous",
+                    "The best way to predict the future is to create it. \n- Peter Drucker"]
+                div.innerText = arr[counter];
+                counter++;
+                console.log('button worked successfully');
+                if (counter === arr.length) {
+                    counter = 0;
+                }
+            });
+        </script>
+</body>
+
+
+</html>
