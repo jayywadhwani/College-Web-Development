@@ -1,0 +1,135 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+width: 100%;
+height: 100%;
+position: relative;
+overflow-x: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 80vw;
+    height: 20vh;
+    position: absolute;
+    z-index: 1;
+}
+.overlay{
+    width: 100vw;
+    height: 200vh;
+    background-color: #000000;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 1;
+}
+.background{
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+}
+.main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    opacity: 0.8;
+    width: 35vw;
+    height: 80vh;
+    margin-top: 50vw ;
+    padding: 4vw 5vw 7vw 5vw;
+}
+.main>h1{
+    color: #fff;
+    font-size: 2.5vw;
+}
+.main>input{
+    margin: 1vw 0vw;
+    background-color: #201D1A;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    width: 25vw;
+    height: 7vh;
+    padding: 1vw;
+    font-size: 1vw;
+}
+.main>button{
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 7vh;
+    padding: 1vw;
+    font-size: 1.2vw;
+    background-color: red;
+    margin: 1vw 0vw;
+    color: #fff;
+}
+.p1,.p2{
+    color: #fff;
+    font-size: 1.2vw;
+    margin: 1vw 0vw;
+}
+.remember{
+    color: #fff;
+    width: 2vw;
+    height: 2vh;
+}
+label{
+    color: #fff;
+    font-size: 1.2vw;
+}
+.main>p>a{
+    text-decoration: none;
+    color: blue;
+}
+.p3{
+    color: gray;
+    font-size: 1.1vw;
+}
+footer{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    margin-top: 110vw;
+    padding: 3vw 15vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer>div>a{
+    text-decoration: none;
+    color: gray;
+}
+footer>div>select{
+    width: 6vw;
+    height: 4vh;
+    border: 0.5px solid #fff;
+    background-color: #201D1A;
+    color: #fff;
+    border-radius: 5px;
+}
+footer>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3vw 8vw 0vw 0vw;
+}
+footer>div>a{
+    padding-bottom: 1vw;
+}
+footer>p{
+    color: gray;
+    font-size: 1vw;
+}
